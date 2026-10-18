@@ -1,0 +1,328 @@
+{
+  "_meta": {
+    "_table": {
+      "label": "Payroll record",
+      "plural": "Payroll",
+      "icon": "WalletCards"
+    },
+    "Name": {
+      "type": "Text",
+      "label": "Record name",
+      "required": true
+    },
+    "worker_c": {
+      "type": "Lookup",
+      "label": "Worker",
+      "lookup": "workers_c",
+      "required": true
+    },
+    "payPeriod_c": {
+      "type": "Text",
+      "label": "Pay period",
+      "required": true
+    },
+    "daysPresent_c": {
+      "type": "Number",
+      "label": "Days worked",
+      "required": true
+    },
+    "overtimeHours_c": {
+      "type": "Decimal",
+      "label": "Overtime hours",
+      "precision": 2
+    },
+    "grossPay_c": {
+      "type": "Decimal",
+      "label": "Gross pay (₹)",
+      "precision": 2,
+      "required": true
+    },
+    "advance_c": {
+      "type": "Decimal",
+      "label": "Advance paid (₹)",
+      "precision": 2
+    },
+    "deductions_c": {
+      "type": "Decimal",
+      "label": "Other deductions (₹)",
+      "precision": 2
+    },
+    "netPay_c": {
+      "type": "Decimal",
+      "label": "Net pay (₹)",
+      "precision": 2
+    },
+    "status_c": {
+      "type": "Picklist",
+      "label": "Payment status",
+      "values": "Draft,Approved,Paid",
+      "required": true
+    },
+    "paidOn_c": {
+      "type": "Date",
+      "label": "Paid on"
+    },
+    "notes_c": {
+      "type": "MultilineText",
+      "label": "Notes"
+    }
+  },
+  "records": [
+    {
+      "Id": "d0000021-1a2b-4c3d-8e9f-900000000021",
+      "Name": "Aman Verma · 2026-10-01 to 2026-10-15",
+      "worker_c": {
+        "Id": "d0000041-1a2b-4c3d-8e9f-900000000041",
+        "Name": "Aman Verma"
+      },
+      "payPeriod_c": "2026-10-01 to 2026-10-15",
+      "daysPresent_c": 13,
+      "overtimeHours_c": 5,
+      "grossPay_c": 11500,
+      "advance_c": 1000,
+      "deductions_c": 0,
+      "netPay_c": 10500,
+      "status_c": "Paid",
+      "paidOn_c": "2026-10-15",
+      "notes_c": "",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-14T09:15:00.000Z",
+      "ModifiedOn": "2026-10-14T09:15:00.000Z"
+    },
+    {
+      "Id": "d0000022-1a2b-4c3d-8e9f-900000000022",
+      "Name": "Nikhil Rao · 2026-10-01 to 2026-10-15",
+      "worker_c": {
+        "Id": "d0000042-1a2b-4c3d-8e9f-900000000042",
+        "Name": "Nikhil Rao"
+      },
+      "payPeriod_c": "2026-10-01 to 2026-10-15",
+      "daysPresent_c": 14,
+      "overtimeHours_c": 2,
+      "grossPay_c": 13000,
+      "advance_c": 0,
+      "deductions_c": 250,
+      "netPay_c": 12750,
+      "status_c": "Approved",
+      "paidOn_c": null,
+      "notes_c": "",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-13T09:15:00.000Z",
+      "ModifiedOn": "2026-10-13T09:15:00.000Z"
+    },
+    {
+      "Id": "d0000023-1a2b-4c3d-8e9f-900000000023",
+      "Name": "Suresh Kumar · 2026-10-01 to 2026-10-15",
+      "worker_c": {
+        "Id": "d0000043-1a2b-4c3d-8e9f-900000000043",
+        "Name": "Suresh Kumar"
+      },
+      "payPeriod_c": "2026-10-01 to 2026-10-15",
+      "daysPresent_c": 14,
+      "overtimeHours_c": 6,
+      "grossPay_c": 17500,
+      "advance_c": 1500,
+      "deductions_c": 0,
+      "netPay_c": 16000,
+      "status_c": "Draft",
+      "paidOn_c": null,
+      "notes_c": "",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-12T09:15:00.000Z",
+      "ModifiedOn": "2026-10-12T09:15:00.000Z"
+    },
+    {
+      "Id": "d0000024-1a2b-4c3d-8e9f-900000000024",
+      "Name": "Imran Shaikh · 2026-10-01 to 2026-10-15",
+      "worker_c": {
+        "Id": "d0000044-1a2b-4c3d-8e9f-900000000044",
+        "Name": "Imran Shaikh"
+      },
+      "payPeriod_c": "2026-10-01 to 2026-10-15",
+      "daysPresent_c": 12,
+      "overtimeHours_c": 0,
+      "grossPay_c": 9600,
+      "advance_c": 0,
+      "deductions_c": 0,
+      "netPay_c": 9600,
+      "status_c": "Approved",
+      "paidOn_c": null,
+      "notes_c": "",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-11T09:15:00.000Z",
+      "ModifiedOn": "2026-10-11T09:15:00.000Z"
+    },
+    {
+      "Id": "d0000025-1a2b-4c3d-8e9f-900000000025",
+      "Name": "Ravi Teja · 2026-10-01 to 2026-10-15",
+      "worker_c": {
+        "Id": "d0000045-1a2b-4c3d-8e9f-900000000045",
+        "Name": "Ravi Teja"
+      },
+      "payPeriod_c": "2026-10-01 to 2026-10-15",
+      "daysPresent_c": 13,
+      "overtimeHours_c": 3,
+      "grossPay_c": 14000,
+      "advance_c": 2000,
+      "deductions_c": 0,
+      "netPay_c": 12000,
+      "status_c": "Paid",
+      "paidOn_c": "2026-10-14",
+      "notes_c": "",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-10T09:15:00.000Z",
+      "ModifiedOn": "2026-10-10T09:15:00.000Z"
+    },
+    {
+      "Id": "d0000026-1a2b-4c3d-8e9f-900000000026",
+      "Name": "Kiran Das · 2026-10-01 to 2026-10-15",
+      "worker_c": {
+        "Id": "d0000046-1a2b-4c3d-8e9f-900000000046",
+        "Name": "Kiran Das"
+      },
+      "payPeriod_c": "2026-10-01 to 2026-10-15",
+      "daysPresent_c": 11,
+      "overtimeHours_c": 0,
+      "grossPay_c": 8250,
+      "advance_c": 500,
+      "deductions_c": 0,
+      "netPay_c": 7750,
+      "status_c": "Draft",
+      "paidOn_c": null,
+      "notes_c": "",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-09T09:15:00.000Z",
+      "ModifiedOn": "2026-10-09T09:15:00.000Z"
+    },
+    {
+      "Id": "d0000027-1a2b-4c3d-8e9f-900000000027",
+      "Name": "Mohan Yadav · 2026-10-01 to 2026-10-15",
+      "worker_c": {
+        "Id": "d0000047-1a2b-4c3d-8e9f-900000000047",
+        "Name": "Mohan Yadav"
+      },
+      "payPeriod_c": "2026-10-01 to 2026-10-15",
+      "daysPresent_c": 14,
+      "overtimeHours_c": 1,
+      "grossPay_c": 13300,
+      "advance_c": 0,
+      "deductions_c": 300,
+      "netPay_c": 13000,
+      "status_c": "Paid",
+      "paidOn_c": "2026-10-15",
+      "notes_c": "",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-08T09:15:00.000Z",
+      "ModifiedOn": "2026-10-08T09:15:00.000Z"
+    },
+    {
+      "Id": "d0000028-1a2b-4c3d-8e9f-900000000028",
+      "Name": "Vijay Singh · 2026-09-16 to 2026-09-30",
+      "worker_c": {
+        "Id": "d0000048-1a2b-4c3d-8e9f-900000000048",
+        "Name": "Vijay Singh"
+      },
+      "payPeriod_c": "2026-09-16 to 2026-09-30",
+      "daysPresent_c": 10,
+      "overtimeHours_c": 0,
+      "grossPay_c": 7800,
+      "advance_c": 0,
+      "deductions_c": 0,
+      "netPay_c": 7800,
+      "status_c": "Paid",
+      "paidOn_c": "2026-10-01",
+      "notes_c": "",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-07T09:15:00.000Z",
+      "ModifiedOn": "2026-10-07T09:15:00.000Z"
+    }
+  ]
+}

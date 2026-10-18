@@ -1,0 +1,156 @@
+{
+  "_meta": {
+    "_table": {
+      "label": "Expense",
+      "plural": "Expenses",
+      "icon": "ReceiptIndianRupee"
+    },
+    "Name": {
+      "type": "Text",
+      "label": "Expense description",
+      "required": true
+    },
+    "expenseDate_c": {
+      "type": "Date",
+      "label": "Date",
+      "required": true
+    },
+    "category_c": {
+      "type": "Picklist",
+      "label": "Category",
+      "values": "Transport,Utilities,Maintenance,Worker Advance,Office,Tools,Other",
+      "required": true
+    },
+    "amount_c": {
+      "type": "Decimal",
+      "label": "Amount (₹)",
+      "precision": 2,
+      "required": true
+    },
+    "paymentMethod_c": {
+      "type": "Picklist",
+      "label": "Payment method",
+      "values": "Cash,UPI,Bank Transfer,Other",
+      "required": true
+    },
+    "paidTo_c": {
+      "type": "Text",
+      "label": "Paid to"
+    },
+    "notes_c": {
+      "type": "MultilineText",
+      "label": "Notes"
+    },
+    "receipt_c": {
+      "type": "Files",
+      "label": "Receipt / photo",
+      "supportMultipleValues": false,
+      "supportedExtensions": [
+        "jpg",
+        "jpeg",
+        "png",
+        "webp"
+      ],
+      "minValue": 0,
+      "maxValue": 10240
+    }
+  },
+  "records": [
+    {
+      "Id": "d0000022-1a2b-4c3d-8e9f-900000000022",
+      "Name": "Workshop electricity",
+      "expenseDate_c": "2026-10-15",
+      "category_c": "Utilities",
+      "amount_c": 6200,
+      "paymentMethod_c": "Bank Transfer",
+      "paidTo_c": "Power Utility",
+      "notes_c": "October bill",
+      "Owner": {
+        "Id": "b52d0e38-6f9a-4c17-8d2e-a6c309f75e41",
+        "Name": "Maya Manager"
+      },
+      "CreatedBy": {
+        "Id": "b52d0e38-6f9a-4c17-8d2e-a6c309f75e41",
+        "Name": "Maya Manager"
+      },
+      "ModifiedBy": {
+        "Id": "b52d0e38-6f9a-4c17-8d2e-a6c309f75e41",
+        "Name": "Maya Manager"
+      },
+      "CreatedOn": "2026-10-13T09:15:00.000Z",
+      "ModifiedOn": "2026-10-13T09:15:00.000Z"
+    },
+    {
+      "Id": "d0000024-1a2b-4c3d-8e9f-900000000024",
+      "Name": "Local transport",
+      "expenseDate_c": "2026-10-12",
+      "category_c": "Transport",
+      "amount_c": 2450,
+      "paymentMethod_c": "Cash",
+      "paidTo_c": "Ravi Transport",
+      "notes_c": "Delivery fuel and transport",
+      "Owner": {
+        "Id": "b52d0e38-6f9a-4c17-8d2e-a6c309f75e41",
+        "Name": "Maya Manager"
+      },
+      "CreatedBy": {
+        "Id": "b52d0e38-6f9a-4c17-8d2e-a6c309f75e41",
+        "Name": "Maya Manager"
+      },
+      "ModifiedBy": {
+        "Id": "b52d0e38-6f9a-4c17-8d2e-a6c309f75e41",
+        "Name": "Maya Manager"
+      },
+      "CreatedOn": "2026-10-11T09:15:00.000Z",
+      "ModifiedOn": "2026-10-11T09:15:00.000Z"
+    },
+    {
+      "Id": "d0000026-1a2b-4c3d-8e9f-900000000026",
+      "Name": "Worker advance",
+      "expenseDate_c": "2026-10-10",
+      "category_c": "Worker Advance",
+      "amount_c": 1500,
+      "paymentMethod_c": "Cash",
+      "paidTo_c": "Aman Verma",
+      "notes_c": "Advance against October payroll",
+      "Owner": {
+        "Id": "b52d0e38-6f9a-4c17-8d2e-a6c309f75e41",
+        "Name": "Maya Manager"
+      },
+      "CreatedBy": {
+        "Id": "b52d0e38-6f9a-4c17-8d2e-a6c309f75e41",
+        "Name": "Maya Manager"
+      },
+      "ModifiedBy": {
+        "Id": "b52d0e38-6f9a-4c17-8d2e-a6c309f75e41",
+        "Name": "Maya Manager"
+      },
+      "CreatedOn": "2026-10-09T09:15:00.000Z",
+      "ModifiedOn": "2026-10-09T09:15:00.000Z"
+    },
+    {
+      "Id": "d0000028-1a2b-4c3d-8e9f-900000000028",
+      "Name": "Equipment maintenance",
+      "expenseDate_c": "2026-10-06",
+      "category_c": "Maintenance",
+      "amount_c": 4800,
+      "paymentMethod_c": "UPI",
+      "paidTo_c": "Workshop Services",
+      "notes_c": "Scale calibration",
+      "Owner": {
+        "Id": "b52d0e38-6f9a-4c17-8d2e-a6c309f75e41",
+        "Name": "Maya Manager"
+      },
+      "CreatedBy": {
+        "Id": "b52d0e38-6f9a-4c17-8d2e-a6c309f75e41",
+        "Name": "Maya Manager"
+      },
+      "ModifiedBy": {
+        "Id": "b52d0e38-6f9a-4c17-8d2e-a6c309f75e41",
+        "Name": "Maya Manager"
+      },
+      "CreatedOn": "2026-10-07T09:15:00.000Z",
+      "ModifiedOn": "2026-10-07T09:15:00.000Z"
+    }
+  ]
+}

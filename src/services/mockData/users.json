@@ -1,0 +1,95 @@
+{
+  "_meta": {
+    "Name": {
+      "type": "Text",
+      "label": "Full Name",
+      "required": true
+    },
+    "Email": {
+      "type": "Email",
+      "label": "Email Address",
+      "required": true
+    },
+    "FirstName": {
+      "type": "Text",
+      "label": "First Name",
+      "required": true
+    },
+    "LastName": {
+      "type": "Text",
+      "label": "Last Name",
+      "required": true
+    },
+    "password": {
+      "type": "Text",
+      "label": "Password",
+      "required": true
+    },
+    "AvatarUrl": {
+      "type": "Text",
+      "label": "Avatar Url"
+    }
+  },
+  "records": [
+    {
+      "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+      "userId": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+      "companyId": "c63e1f49-70ab-4d28-9e35-b7d41a806f52",
+      "Name": "Foundry Admin",
+      "FirstName": "Foundry",
+      "LastName": "Admin",
+      "Email": "admin@foundry.demo",
+      "password": "admin1234",
+      "AvatarUrl": null,
+      "IsOwner": true,
+      "accounts": [
+        {
+          "userId": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+          "companyId": "c63e1f49-70ab-4d28-9e35-b7d41a806f52",
+          "companyName": "Foundry Company",
+          "companyUserId": 1,
+          "isOwner": true,
+          "profile": {
+            "id": 0,
+            "name": "Admin_c"
+          },
+          "companyOwner": {
+            "name": "Foundry Admin",
+            "avatarUrl": null,
+            "email": "admin@foundry.demo"
+          }
+        }
+      ]
+    },
+    {
+      "Id": "b52d0e38-6f9a-4c17-8d2e-a6c309f75e41",
+      "userId": "b52d0e38-6f9a-4c17-8d2e-a6c309f75e41",
+      "companyId": "c63e1f49-70ab-4d28-9e35-b7d41a806f52",
+      "Name": "Maya Manager",
+      "FirstName": "Maya",
+      "LastName": "Manager",
+      "Email": "manager@foundry.demo",
+      "password": "manager1234",
+      "AvatarUrl": null,
+      "IsOwner": false,
+      "accounts": [
+        {
+          "userId": "b52d0e38-6f9a-4c17-8d2e-a6c309f75e41",
+          "companyId": "c63e1f49-70ab-4d28-9e35-b7d41a806f52",
+          "companyName": "Foundry Company",
+          "companyUserId": 2,
+          "isOwner": false,
+          "profile": {
+            "id": 1,
+            "name": "Manager_c"
+          },
+          "companyOwner": {
+            "name": "Foundry Admin",
+            "avatarUrl": null,
+            "email": "admin@foundry.demo"
+          }
+        }
+      ]
+    }
+  ]
+}

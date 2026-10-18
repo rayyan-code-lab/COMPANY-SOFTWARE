@@ -1,0 +1,565 @@
+{
+  "_meta": {
+    "_table": {
+      "label": "Stock movement",
+      "plural": "Stock movements",
+      "icon": "Package"
+    },
+    "Name": {
+      "type": "Text",
+      "label": "Record name",
+      "required": true
+    },
+    "movementType_c": {
+      "type": "Picklist",
+      "label": "Movement",
+      "values": "Stock In,Stock Out,Adjustment",
+      "required": true
+    },
+    "weightKg_c": {
+      "type": "Decimal",
+      "label": "Weight (kg)",
+      "precision": 2,
+      "required": true
+    },
+    "unitPrice_c": {
+      "type": "Decimal",
+      "label": "Price per kg (₹)",
+      "precision": 2,
+      "required": true
+    },
+    "totalValue_c": {
+      "type": "Decimal",
+      "label": "Total value (₹)",
+      "precision": 2
+    },
+    "movementDate_c": {
+      "type": "Date",
+      "label": "Movement date",
+      "required": true
+    },
+    "supplierOrReason_c": {
+      "type": "Text",
+      "label": "Supplier / reason"
+    },
+    "notes_c": {
+      "type": "MultilineText",
+      "label": "Notes"
+    },
+    "stockItem_c": {
+      "type": "Lookup",
+      "label": "Stock item",
+      "lookup": "stock_items_c"
+    },
+    "purchase_c": {
+      "type": "Lookup",
+      "label": "Purchase",
+      "lookup": "purchases_c"
+    },
+    "purchaseId_c": {
+      "type": "Text",
+      "label": "Purchase ID"
+    },
+    "movementKey_c": {
+      "type": "Text",
+      "label": "Movement idempotency key"
+    }
+  },
+  "records": [
+    {
+      "Id": "d0000021-1a2b-4c3d-8e9f-900000000021",
+      "Name": "Opening stock received",
+      "movementType_c": "Stock In",
+      "weightKg_c": 1200,
+      "unitPrice_c": 68,
+      "totalValue_c": 81600,
+      "movementDate_c": "2026-10-01",
+      "supplierOrReason_c": "Initial supplier delivery",
+      "notes_c": "",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-14T09:15:00.000Z",
+      "ModifiedOn": "2026-10-14T09:15:00.000Z",
+      "stockItem_c": {
+        "Id": "aa000001-1a2b-4c3d-8e9f-900000000001",
+        "Name": "General Stock"
+      },
+      "purchase_c": null,
+      "purchaseId_c": "",
+      "movementKey_c": "LEGACY:d0000021-1a2b-4c3d-8e9f-900000000021"
+    },
+    {
+      "Id": "d0000022-1a2b-4c3d-8e9f-900000000022",
+      "Name": "Morning weigh-in",
+      "movementType_c": "Stock In",
+      "weightKg_c": 850,
+      "unitPrice_c": 69,
+      "totalValue_c": 58650,
+      "movementDate_c": "2026-10-03",
+      "supplierOrReason_c": "Shree Materials",
+      "notes_c": "Batch verified",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-13T09:15:00.000Z",
+      "ModifiedOn": "2026-10-13T09:15:00.000Z",
+      "stockItem_c": {
+        "Id": "aa000001-1a2b-4c3d-8e9f-900000000001",
+        "Name": "General Stock"
+      },
+      "purchase_c": null,
+      "purchaseId_c": "",
+      "movementKey_c": "LEGACY:d0000022-1a2b-4c3d-8e9f-900000000022"
+    },
+    {
+      "Id": "d0000023-1a2b-4c3d-8e9f-900000000023",
+      "Name": "Customer dispatch #104",
+      "movementType_c": "Stock Out",
+      "weightKg_c": 320,
+      "unitPrice_c": 82,
+      "totalValue_c": 26240,
+      "movementDate_c": "2026-10-04",
+      "supplierOrReason_c": "Retail customer",
+      "notes_c": "",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-12T09:15:00.000Z",
+      "ModifiedOn": "2026-10-12T09:15:00.000Z",
+      "stockItem_c": {
+        "Id": "aa000001-1a2b-4c3d-8e9f-900000000001",
+        "Name": "General Stock"
+      },
+      "purchase_c": null,
+      "purchaseId_c": "",
+      "movementKey_c": "LEGACY:d0000023-1a2b-4c3d-8e9f-900000000023"
+    },
+    {
+      "Id": "d0000024-1a2b-4c3d-8e9f-900000000024",
+      "Name": "Warehouse replenishment",
+      "movementType_c": "Stock In",
+      "weightKg_c": 640,
+      "unitPrice_c": 70,
+      "totalValue_c": 44800,
+      "movementDate_c": "2026-10-06",
+      "supplierOrReason_c": "Shree Materials",
+      "notes_c": "",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-11T09:15:00.000Z",
+      "ModifiedOn": "2026-10-11T09:15:00.000Z",
+      "stockItem_c": {
+        "Id": "aa000001-1a2b-4c3d-8e9f-900000000001",
+        "Name": "General Stock"
+      },
+      "purchase_c": null,
+      "purchaseId_c": "",
+      "movementKey_c": "LEGACY:d0000024-1a2b-4c3d-8e9f-900000000024"
+    },
+    {
+      "Id": "d0000025-1a2b-4c3d-8e9f-900000000025",
+      "Name": "Bulk dispatch #109",
+      "movementType_c": "Stock Out",
+      "weightKg_c": 450,
+      "unitPrice_c": 83,
+      "totalValue_c": 37350,
+      "movementDate_c": "2026-10-07",
+      "supplierOrReason_c": "Bulk customer",
+      "notes_c": "",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-10T09:15:00.000Z",
+      "ModifiedOn": "2026-10-10T09:15:00.000Z",
+      "stockItem_c": {
+        "Id": "aa000001-1a2b-4c3d-8e9f-900000000001",
+        "Name": "General Stock"
+      },
+      "purchase_c": null,
+      "purchaseId_c": "",
+      "movementKey_c": "LEGACY:d0000025-1a2b-4c3d-8e9f-900000000025"
+    },
+    {
+      "Id": "d0000026-1a2b-4c3d-8e9f-900000000026",
+      "Name": "Supplier delivery",
+      "movementType_c": "Stock In",
+      "weightKg_c": 900,
+      "unitPrice_c": 70.5,
+      "totalValue_c": 63450,
+      "movementDate_c": "2026-10-09",
+      "supplierOrReason_c": "Metro Industrial Supply",
+      "notes_c": "",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-09T09:15:00.000Z",
+      "ModifiedOn": "2026-10-09T09:15:00.000Z",
+      "stockItem_c": {
+        "Id": "aa000001-1a2b-4c3d-8e9f-900000000001",
+        "Name": "General Stock"
+      },
+      "purchase_c": null,
+      "purchaseId_c": "",
+      "movementKey_c": "LEGACY:d0000026-1a2b-4c3d-8e9f-900000000026"
+    },
+    {
+      "Id": "d0000027-1a2b-4c3d-8e9f-900000000027",
+      "Name": "Retail dispatch #115",
+      "movementType_c": "Stock Out",
+      "weightKg_c": 250,
+      "unitPrice_c": 84,
+      "totalValue_c": 21000,
+      "movementDate_c": "2026-10-10",
+      "supplierOrReason_c": "Retail customer",
+      "notes_c": "",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-08T09:15:00.000Z",
+      "ModifiedOn": "2026-10-08T09:15:00.000Z",
+      "stockItem_c": {
+        "Id": "aa000001-1a2b-4c3d-8e9f-900000000001",
+        "Name": "General Stock"
+      },
+      "purchase_c": null,
+      "purchaseId_c": "",
+      "movementKey_c": "LEGACY:d0000027-1a2b-4c3d-8e9f-900000000027"
+    },
+    {
+      "Id": "d0000028-1a2b-4c3d-8e9f-900000000028",
+      "Name": "Weight correction",
+      "movementType_c": "Adjustment",
+      "weightKg_c": -12,
+      "unitPrice_c": 70.5,
+      "totalValue_c": 846,
+      "movementDate_c": "2026-10-11",
+      "supplierOrReason_c": "Scale recalibration",
+      "notes_c": "Correction entered as negative",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-07T09:15:00.000Z",
+      "ModifiedOn": "2026-10-07T09:15:00.000Z",
+      "stockItem_c": {
+        "Id": "aa000001-1a2b-4c3d-8e9f-900000000001",
+        "Name": "General Stock"
+      },
+      "purchase_c": null,
+      "purchaseId_c": "",
+      "movementKey_c": "LEGACY:d0000028-1a2b-4c3d-8e9f-900000000028"
+    },
+    {
+      "Id": "d0000029-1a2b-4c3d-8e9f-900000000029",
+      "Name": "Bulk dispatch #119",
+      "movementType_c": "Stock Out",
+      "weightKg_c": 180,
+      "unitPrice_c": 84,
+      "totalValue_c": 15120,
+      "movementDate_c": "2026-10-13",
+      "supplierOrReason_c": "Bulk customer",
+      "notes_c": "",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-06T09:15:00.000Z",
+      "ModifiedOn": "2026-10-06T09:15:00.000Z",
+      "stockItem_c": {
+        "Id": "aa000001-1a2b-4c3d-8e9f-900000000001",
+        "Name": "General Stock"
+      },
+      "purchase_c": null,
+      "purchaseId_c": "",
+      "movementKey_c": "LEGACY:d0000029-1a2b-4c3d-8e9f-900000000029"
+    },
+    {
+      "Id": "d0000030-1a2b-4c3d-8e9f-900000000030",
+      "Name": "Supplier delivery",
+      "movementType_c": "Stock In",
+      "weightKg_c": 500,
+      "unitPrice_c": 71,
+      "totalValue_c": 35500,
+      "movementDate_c": "2026-10-15",
+      "supplierOrReason_c": "Metro Industrial Supply",
+      "notes_c": "",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-05T09:15:00.000Z",
+      "ModifiedOn": "2026-10-05T09:15:00.000Z",
+      "stockItem_c": {
+        "Id": "aa000001-1a2b-4c3d-8e9f-900000000001",
+        "Name": "General Stock"
+      },
+      "purchase_c": null,
+      "purchaseId_c": "",
+      "movementKey_c": "LEGACY:d0000030-1a2b-4c3d-8e9f-900000000030"
+    },
+    {
+      "Id": "d0000401-1a2b-4c3d-8e9f-900000000401",
+      "Name": "Purchase stock-in · PUR-20261018-0001",
+      "movementType_c": "Stock In",
+      "weightKg_c": 1000,
+      "unitPrice_c": 70,
+      "totalValue_c": 70000,
+      "movementDate_c": "2026-10-18",
+      "supplierOrReason_c": "Shree Materials",
+      "notes_c": "Created from Purchase Management. Initial bulk supply",
+      "stockItem_c": {
+        "Id": "aa000001-1a2b-4c3d-8e9f-900000000001",
+        "Name": "General Stock"
+      },
+      "purchase_c": {
+        "Id": "d0000301-1a2b-4c3d-8e9f-900000000301",
+        "Name": "PUR-20261018-0001"
+      },
+      "purchaseId_c": "PUR-20261018-0001",
+      "movementKey_c": "PURCHASE:d0000301-1a2b-4c3d-8e9f-900000000301",
+      "Owner": {
+        "Id": "b52d0e38-6f9a-4c17-8d2e-a6c309f75e41",
+        "Name": "Maya Manager"
+      },
+      "CreatedBy": {
+        "Id": "b52d0e38-6f9a-4c17-8d2e-a6c309f75e41",
+        "Name": "Maya Manager"
+      },
+      "ModifiedBy": {
+        "Id": "b52d0e38-6f9a-4c17-8d2e-a6c309f75e41",
+        "Name": "Maya Manager"
+      },
+      "CreatedOn": "2026-10-18T09:00:00.000Z",
+      "ModifiedOn": "2026-10-18T09:00:00.000Z"
+    },
+    {
+      "Id": "d0000402-1a2b-4c3d-8e9f-900000000402",
+      "Name": "Purchase stock-in · PUR-20261017-0002",
+      "movementType_c": "Stock In",
+      "weightKg_c": 300,
+      "unitPrice_c": 75,
+      "totalValue_c": 22500,
+      "movementDate_c": "2026-10-17",
+      "supplierOrReason_c": "Metro Industrial Supply",
+      "notes_c": "Created from Purchase Management. Paid in full",
+      "stockItem_c": {
+        "Id": "aa000001-1a2b-4c3d-8e9f-900000000001",
+        "Name": "General Stock"
+      },
+      "purchase_c": {
+        "Id": "d0000302-1a2b-4c3d-8e9f-900000000302",
+        "Name": "PUR-20261017-0002"
+      },
+      "purchaseId_c": "PUR-20261017-0002",
+      "movementKey_c": "PURCHASE:d0000302-1a2b-4c3d-8e9f-900000000302",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-17T09:00:00.000Z",
+      "ModifiedOn": "2026-10-17T09:00:00.000Z"
+    },
+    {
+      "Id": "d0000403-1a2b-4c3d-8e9f-900000000403",
+      "Name": "Purchase stock-in · PUR-20261016-0003",
+      "movementType_c": "Stock In",
+      "weightKg_c": 650,
+      "unitPrice_c": 68,
+      "totalValue_c": 44200,
+      "movementDate_c": "2026-10-16",
+      "supplierOrReason_c": "Shree Materials",
+      "notes_c": "Created from Purchase Management. Supplier credit",
+      "stockItem_c": {
+        "Id": "aa000001-1a2b-4c3d-8e9f-900000000001",
+        "Name": "General Stock"
+      },
+      "purchase_c": {
+        "Id": "d0000303-1a2b-4c3d-8e9f-900000000303",
+        "Name": "PUR-20261016-0003"
+      },
+      "purchaseId_c": "PUR-20261016-0003",
+      "movementKey_c": "PURCHASE:d0000303-1a2b-4c3d-8e9f-900000000303",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-16T09:00:00.000Z",
+      "ModifiedOn": "2026-10-16T09:00:00.000Z"
+    },
+    {
+      "Id": "d0000404-1a2b-4c3d-8e9f-900000000404",
+      "Name": "Purchase stock-in · PUR-20261014-0004",
+      "movementType_c": "Stock In",
+      "weightKg_c": 120,
+      "unitPrice_c": 72.5,
+      "totalValue_c": 8700,
+      "movementDate_c": "2026-10-14",
+      "supplierOrReason_c": "Local supplier",
+      "notes_c": "Created from Purchase Management. Part payment",
+      "stockItem_c": {
+        "Id": "aa000001-1a2b-4c3d-8e9f-900000000001",
+        "Name": "General Stock"
+      },
+      "purchase_c": {
+        "Id": "d0000304-1a2b-4c3d-8e9f-900000000304",
+        "Name": "PUR-20261014-0004"
+      },
+      "purchaseId_c": "PUR-20261014-0004",
+      "movementKey_c": "PURCHASE:d0000304-1a2b-4c3d-8e9f-900000000304",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-15T09:00:00.000Z",
+      "ModifiedOn": "2026-10-15T09:00:00.000Z"
+    },
+    {
+      "Id": "d0000405-1a2b-4c3d-8e9f-900000000405",
+      "Name": "Purchase stock-in · PUR-20261012-0005",
+      "movementType_c": "Stock In",
+      "weightKg_c": 500,
+      "unitPrice_c": 71,
+      "totalValue_c": 35500,
+      "movementDate_c": "2026-10-12",
+      "supplierOrReason_c": "Metro Industrial Supply",
+      "notes_c": "Created from Purchase Management. Paid in full",
+      "stockItem_c": {
+        "Id": "aa000001-1a2b-4c3d-8e9f-900000000001",
+        "Name": "General Stock"
+      },
+      "purchase_c": {
+        "Id": "d0000305-1a2b-4c3d-8e9f-900000000305",
+        "Name": "PUR-20261012-0005"
+      },
+      "purchaseId_c": "PUR-20261012-0005",
+      "movementKey_c": "PURCHASE:d0000305-1a2b-4c3d-8e9f-900000000305",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-14T09:00:00.000Z",
+      "ModifiedOn": "2026-10-14T09:00:00.000Z"
+    }
+  ]
+}

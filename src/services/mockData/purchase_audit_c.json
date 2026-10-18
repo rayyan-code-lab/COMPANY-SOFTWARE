@@ -1,0 +1,171 @@
+{
+  "_meta": {
+    "_table": {
+      "label": "Purchase audit event",
+      "plural": "Purchase audit trail",
+      "icon": "ClipboardList"
+    },
+    "Name": {
+      "type": "Text",
+      "label": "Record name",
+      "required": true
+    },
+    "auditKey_c": {
+      "type": "Text",
+      "label": "Audit key",
+      "required": true
+    },
+    "purchase_c": {
+      "type": "Lookup",
+      "label": "Purchase",
+      "lookup": "purchases_c",
+      "required": true
+    },
+    "action_c": {
+      "type": "Picklist",
+      "label": "Action",
+      "values": "Created,Edited,Payment Added,Cancelled,Inventory Repaired",
+      "required": true
+    },
+    "summary_c": {
+      "type": "MultilineText",
+      "label": "Change summary"
+    },
+    "eventAt_c": {
+      "type": "DateTime",
+      "label": "Event time"
+    }
+  },
+  "records": [
+    {
+      "Id": "d0000601-1a2b-4c3d-8e9f-900000000601",
+      "Owner": {
+        "Id": "b52d0e38-6f9a-4c17-8d2e-a6c309f75e41",
+        "Name": "Maya Manager"
+      },
+      "CreatedBy": {
+        "Id": "b52d0e38-6f9a-4c17-8d2e-a6c309f75e41",
+        "Name": "Maya Manager"
+      },
+      "ModifiedBy": {
+        "Id": "b52d0e38-6f9a-4c17-8d2e-a6c309f75e41",
+        "Name": "Maya Manager"
+      },
+      "CreatedOn": "2026-10-18T09:00:00.000Z",
+      "ModifiedOn": "2026-10-18T09:00:00.000Z",
+      "Name": "AUD-PUR-20261018-0001",
+      "auditKey_c": "CREATE:PUR-20261018-0001",
+      "purchase_c": {
+        "Id": "d0000301-1a2b-4c3d-8e9f-900000000301",
+        "Name": "PUR-20261018-0001"
+      },
+      "action_c": "Created",
+      "summary_c": "Purchase recorded; matching stock-in movement linked.",
+      "eventAt_c": "2026-10-18T09:00:00.000Z"
+    },
+    {
+      "Id": "d0000602-1a2b-4c3d-8e9f-900000000602",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-17T09:00:00.000Z",
+      "ModifiedOn": "2026-10-17T09:00:00.000Z",
+      "Name": "AUD-PUR-20261017-0002",
+      "auditKey_c": "CREATE:PUR-20261017-0002",
+      "purchase_c": {
+        "Id": "d0000302-1a2b-4c3d-8e9f-900000000302",
+        "Name": "PUR-20261017-0002"
+      },
+      "action_c": "Created",
+      "summary_c": "Purchase recorded; matching stock-in movement linked.",
+      "eventAt_c": "2026-10-17T09:00:00.000Z"
+    },
+    {
+      "Id": "d0000603-1a2b-4c3d-8e9f-900000000603",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-16T09:00:00.000Z",
+      "ModifiedOn": "2026-10-16T09:00:00.000Z",
+      "Name": "AUD-PUR-20261016-0003",
+      "auditKey_c": "CREATE:PUR-20261016-0003",
+      "purchase_c": {
+        "Id": "d0000303-1a2b-4c3d-8e9f-900000000303",
+        "Name": "PUR-20261016-0003"
+      },
+      "action_c": "Created",
+      "summary_c": "Purchase recorded; matching stock-in movement linked.",
+      "eventAt_c": "2026-10-16T09:00:00.000Z"
+    },
+    {
+      "Id": "d0000604-1a2b-4c3d-8e9f-900000000604",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-15T09:00:00.000Z",
+      "ModifiedOn": "2026-10-15T09:00:00.000Z",
+      "Name": "AUD-PUR-20261014-0004",
+      "auditKey_c": "CREATE:PUR-20261014-0004",
+      "purchase_c": {
+        "Id": "d0000304-1a2b-4c3d-8e9f-900000000304",
+        "Name": "PUR-20261014-0004"
+      },
+      "action_c": "Created",
+      "summary_c": "Purchase recorded; matching stock-in movement linked.",
+      "eventAt_c": "2026-10-15T09:00:00.000Z"
+    },
+    {
+      "Id": "d0000605-1a2b-4c3d-8e9f-900000000605",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-14T09:00:00.000Z",
+      "ModifiedOn": "2026-10-14T09:00:00.000Z",
+      "Name": "AUD-PUR-20261012-0005",
+      "auditKey_c": "CREATE:PUR-20261012-0005",
+      "purchase_c": {
+        "Id": "d0000305-1a2b-4c3d-8e9f-900000000305",
+        "Name": "PUR-20261012-0005"
+      },
+      "action_c": "Created",
+      "summary_c": "Purchase recorded; matching stock-in movement linked.",
+      "eventAt_c": "2026-10-14T09:00:00.000Z"
+    }
+  ]
+}

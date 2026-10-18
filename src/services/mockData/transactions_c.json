@@ -1,0 +1,105 @@
+{
+  "_meta": {
+    "_table": {
+      "label": "Other income",
+      "plural": "Other income records",
+      "icon": "ReceiptIndianRupee"
+    },
+    "Name": {
+      "type": "Text",
+      "label": "Record name",
+      "required": true
+    },
+    "entryType_c": {
+      "type": "Picklist",
+      "label": "Entry type",
+      "values": "Other Income",
+      "required": true
+    },
+    "category_c": {
+      "type": "Picklist",
+      "label": "Category",
+      "values": "Other",
+      "required": true
+    },
+    "amount_c": {
+      "type": "Decimal",
+      "label": "Amount (₹)",
+      "precision": 2,
+      "required": true
+    },
+    "entryDate_c": {
+      "type": "Date",
+      "label": "Date",
+      "required": true
+    },
+    "paymentMethod_c": {
+      "type": "Picklist",
+      "label": "Payment method",
+      "values": "Cash,UPI,Bank Transfer,Other",
+      "required": true
+    },
+    "weightKg_c": {
+      "type": "Decimal",
+      "label": "Weight (kg)",
+      "precision": 2
+    },
+    "unitPrice_c": {
+      "type": "Decimal",
+      "label": "Unit price (₹/kg)",
+      "precision": 2
+    },
+    "counterparty_c": {
+      "type": "Text",
+      "label": "Customer / vendor"
+    },
+    "notes_c": {
+      "type": "MultilineText",
+      "label": "Notes"
+    },
+    "attachments_c": {
+      "type": "Files",
+      "label": "Receipt / photo evidence",
+      "supportMultipleValues": true,
+      "supportedExtensions": [
+        "jpg",
+        "jpeg",
+        "png",
+        "webp",
+        "pdf"
+      ],
+      "minValue": 0,
+      "maxValue": 10240
+    }
+  },
+  "records": [
+    {
+      "Id": "d0000029-1a2b-4c3d-8e9f-900000000029",
+      "Name": "Scrap recovery",
+      "entryType_c": "Other Income",
+      "category_c": "Other",
+      "amount_c": 2100,
+      "entryDate_c": "2026-10-04",
+      "paymentMethod_c": "Cash",
+      "weightKg_c": null,
+      "unitPrice_c": null,
+      "counterparty_c": "Scrap dealer",
+      "notes_c": "",
+      "attachments_c": [],
+      "Owner": {
+        "Id": "b52d0e38-6f9a-4c17-8d2e-a6c309f75e41",
+        "Name": "Maya Manager"
+      },
+      "CreatedBy": {
+        "Id": "b52d0e38-6f9a-4c17-8d2e-a6c309f75e41",
+        "Name": "Maya Manager"
+      },
+      "ModifiedBy": {
+        "Id": "b52d0e38-6f9a-4c17-8d2e-a6c309f75e41",
+        "Name": "Maya Manager"
+      },
+      "CreatedOn": "2026-10-06T09:15:00.000Z",
+      "ModifiedOn": "2026-10-06T09:15:00.000Z"
+    }
+  ]
+}

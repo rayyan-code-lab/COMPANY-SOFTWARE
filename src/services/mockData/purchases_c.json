@@ -1,0 +1,332 @@
+{
+  "_meta": {
+    "_table": {
+      "label": "Purchase",
+      "plural": "Purchases",
+      "icon": "ShoppingCart"
+    },
+    "Name": {
+      "type": "Text",
+      "label": "Record name",
+      "required": true
+    },
+    "purchaseRef_c": {
+      "type": "Text",
+      "label": "Purchase ID",
+      "required": true
+    },
+    "stockItem_c": {
+      "type": "Lookup",
+      "label": "Stock item",
+      "lookup": "stock_items_c",
+      "required": true
+    },
+    "quantityKg_c": {
+      "type": "Decimal",
+      "label": "Quantity purchased (kg)",
+      "precision": 3,
+      "required": true
+    },
+    "pricePerKg_c": {
+      "type": "Decimal",
+      "label": "Purchase price per kg (₹)",
+      "precision": 2,
+      "required": true
+    },
+    "totalPurchaseValue_c": {
+      "type": "Decimal",
+      "label": "Total purchase value (₹)",
+      "precision": 2,
+      "required": true
+    },
+    "purchaseDate_c": {
+      "type": "Date",
+      "label": "Purchase date",
+      "required": true
+    },
+    "supplierName_c": {
+      "type": "Text",
+      "label": "Supplier name"
+    },
+    "notes_c": {
+      "type": "MultilineText",
+      "label": "Notes"
+    },
+    "advanceAmount_c": {
+      "type": "Decimal",
+      "label": "Advance paid before purchase (₹)",
+      "precision": 2
+    },
+    "advanceMethod_c": {
+      "type": "Picklist",
+      "label": "Advance payment method",
+      "values": "Cash,UPI,Bank Transfer,Other Online"
+    },
+    "cashAtPurchase_c": {
+      "type": "Decimal",
+      "label": "Cash paid at purchase (₹)",
+      "precision": 2
+    },
+    "onlineAtPurchase_c": {
+      "type": "Decimal",
+      "label": "Online paid at purchase (₹)",
+      "precision": 2
+    },
+    "totalPaid_c": {
+      "type": "Decimal",
+      "label": "Amount paid to date (₹)",
+      "precision": 2
+    },
+    "outstandingBalance_c": {
+      "type": "Decimal",
+      "label": "Outstanding balance (₹)",
+      "precision": 2
+    },
+    "paymentStatus_c": {
+      "type": "Picklist",
+      "label": "Payment status",
+      "values": "Unpaid,Partially Paid,Paid",
+      "required": true
+    },
+    "recordStatus_c": {
+      "type": "Picklist",
+      "label": "Record status",
+      "values": "Active,Cancelled",
+      "required": true
+    },
+    "revision_c": {
+      "type": "Number",
+      "label": "Revision",
+      "required": true
+    },
+    "idempotencyKey_c": {
+      "type": "Text",
+      "label": "Submission key",
+      "required": true
+    },
+    "cancellationReason_c": {
+      "type": "MultilineText",
+      "label": "Cancellation reason"
+    },
+    "cancelledAt_c": {
+      "type": "DateTime",
+      "label": "Cancelled at"
+    },
+    "advanceDate_c": {
+      "type": "Date",
+      "label": "Advance payment date"
+    }
+  },
+  "records": [
+    {
+      "Id": "d0000301-1a2b-4c3d-8e9f-900000000301",
+      "Owner": {
+        "Id": "b52d0e38-6f9a-4c17-8d2e-a6c309f75e41",
+        "Name": "Maya Manager"
+      },
+      "CreatedBy": {
+        "Id": "b52d0e38-6f9a-4c17-8d2e-a6c309f75e41",
+        "Name": "Maya Manager"
+      },
+      "ModifiedBy": {
+        "Id": "b52d0e38-6f9a-4c17-8d2e-a6c309f75e41",
+        "Name": "Maya Manager"
+      },
+      "CreatedOn": "2026-10-18T09:00:00.000Z",
+      "ModifiedOn": "2026-10-18T09:00:00.000Z",
+      "Name": "PUR-20261018-0001",
+      "purchaseRef_c": "PUR-20261018-0001",
+      "stockItem_c": {
+        "Id": "aa000001-1a2b-4c3d-8e9f-900000000001",
+        "Name": "General Stock"
+      },
+      "quantityKg_c": 1000,
+      "pricePerKg_c": 70,
+      "totalPurchaseValue_c": 70000,
+      "purchaseDate_c": "2026-10-18",
+      "supplierName_c": "Shree Materials",
+      "notes_c": "Initial bulk supply",
+      "advanceAmount_c": 5000,
+      "advanceMethod_c": "UPI",
+      "cashAtPurchase_c": 5000,
+      "onlineAtPurchase_c": 10000,
+      "totalPaid_c": 30000,
+      "outstandingBalance_c": 40000,
+      "paymentStatus_c": "Partially Paid",
+      "recordStatus_c": "Active",
+      "revision_c": 1,
+      "idempotencyKey_c": "seed:PUR-20261018-0001",
+      "cancellationReason_c": "",
+      "cancelledAt_c": null,
+      "advanceDate_c": "2026-10-18"
+    },
+    {
+      "Id": "d0000302-1a2b-4c3d-8e9f-900000000302",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-17T09:00:00.000Z",
+      "ModifiedOn": "2026-10-17T09:00:00.000Z",
+      "Name": "PUR-20261017-0002",
+      "purchaseRef_c": "PUR-20261017-0002",
+      "stockItem_c": {
+        "Id": "aa000001-1a2b-4c3d-8e9f-900000000001",
+        "Name": "General Stock"
+      },
+      "quantityKg_c": 300,
+      "pricePerKg_c": 75,
+      "totalPurchaseValue_c": 22500,
+      "purchaseDate_c": "2026-10-17",
+      "supplierName_c": "Metro Industrial Supply",
+      "notes_c": "Paid in full",
+      "advanceAmount_c": 2500,
+      "advanceMethod_c": "Bank Transfer",
+      "cashAtPurchase_c": 0,
+      "onlineAtPurchase_c": 20000,
+      "totalPaid_c": 22500,
+      "outstandingBalance_c": 0,
+      "paymentStatus_c": "Paid",
+      "recordStatus_c": "Active",
+      "revision_c": 1,
+      "idempotencyKey_c": "seed:PUR-20261017-0002",
+      "cancellationReason_c": "",
+      "cancelledAt_c": null,
+      "advanceDate_c": "2026-10-17"
+    },
+    {
+      "Id": "d0000303-1a2b-4c3d-8e9f-900000000303",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-16T09:00:00.000Z",
+      "ModifiedOn": "2026-10-16T09:00:00.000Z",
+      "Name": "PUR-20261016-0003",
+      "purchaseRef_c": "PUR-20261016-0003",
+      "stockItem_c": {
+        "Id": "aa000001-1a2b-4c3d-8e9f-900000000001",
+        "Name": "General Stock"
+      },
+      "quantityKg_c": 650,
+      "pricePerKg_c": 68,
+      "totalPurchaseValue_c": 44200,
+      "purchaseDate_c": "2026-10-16",
+      "supplierName_c": "Shree Materials",
+      "notes_c": "Supplier credit",
+      "advanceAmount_c": 0,
+      "advanceMethod_c": "Cash",
+      "cashAtPurchase_c": 0,
+      "onlineAtPurchase_c": 0,
+      "totalPaid_c": 0,
+      "outstandingBalance_c": 44200,
+      "paymentStatus_c": "Unpaid",
+      "recordStatus_c": "Active",
+      "revision_c": 1,
+      "idempotencyKey_c": "seed:PUR-20261016-0003",
+      "cancellationReason_c": "",
+      "cancelledAt_c": null,
+      "advanceDate_c": ""
+    },
+    {
+      "Id": "d0000304-1a2b-4c3d-8e9f-900000000304",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-15T09:00:00.000Z",
+      "ModifiedOn": "2026-10-15T09:00:00.000Z",
+      "Name": "PUR-20261014-0004",
+      "purchaseRef_c": "PUR-20261014-0004",
+      "stockItem_c": {
+        "Id": "aa000001-1a2b-4c3d-8e9f-900000000001",
+        "Name": "General Stock"
+      },
+      "quantityKg_c": 120,
+      "pricePerKg_c": 72.5,
+      "totalPurchaseValue_c": 8700,
+      "purchaseDate_c": "2026-10-14",
+      "supplierName_c": "Local supplier",
+      "notes_c": "Part payment",
+      "advanceAmount_c": 2000,
+      "advanceMethod_c": "Cash",
+      "cashAtPurchase_c": 1700,
+      "onlineAtPurchase_c": 0,
+      "totalPaid_c": 4700,
+      "outstandingBalance_c": 4000,
+      "paymentStatus_c": "Partially Paid",
+      "recordStatus_c": "Active",
+      "revision_c": 1,
+      "idempotencyKey_c": "seed:PUR-20261014-0004",
+      "cancellationReason_c": "",
+      "cancelledAt_c": null,
+      "advanceDate_c": "2026-10-14"
+    },
+    {
+      "Id": "d0000305-1a2b-4c3d-8e9f-900000000305",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-14T09:00:00.000Z",
+      "ModifiedOn": "2026-10-14T09:00:00.000Z",
+      "Name": "PUR-20261012-0005",
+      "purchaseRef_c": "PUR-20261012-0005",
+      "stockItem_c": {
+        "Id": "aa000001-1a2b-4c3d-8e9f-900000000001",
+        "Name": "General Stock"
+      },
+      "quantityKg_c": 500,
+      "pricePerKg_c": 71,
+      "totalPurchaseValue_c": 35500,
+      "purchaseDate_c": "2026-10-12",
+      "supplierName_c": "Metro Industrial Supply",
+      "notes_c": "Paid in full",
+      "advanceAmount_c": 0,
+      "advanceMethod_c": "UPI",
+      "cashAtPurchase_c": 0,
+      "onlineAtPurchase_c": 35500,
+      "totalPaid_c": 35500,
+      "outstandingBalance_c": 0,
+      "paymentStatus_c": "Paid",
+      "recordStatus_c": "Active",
+      "revision_c": 1,
+      "idempotencyKey_c": "seed:PUR-20261012-0005",
+      "cancellationReason_c": "",
+      "cancelledAt_c": null,
+      "advanceDate_c": ""
+    }
+  ]
+}

@@ -1,0 +1,362 @@
+{
+  "_meta": {
+    "_table": {
+      "label": "Attendance entry",
+      "plural": "Attendance",
+      "icon": "CalendarCheck"
+    },
+    "Name": {
+      "type": "Text",
+      "label": "Record name",
+      "required": true
+    },
+    "worker_c": {
+      "type": "Lookup",
+      "label": "Worker",
+      "lookup": "workers_c",
+      "required": true
+    },
+    "attendanceDate_c": {
+      "type": "Date",
+      "label": "Attendance date",
+      "required": true
+    },
+    "status_c": {
+      "type": "Picklist",
+      "label": "Attendance",
+      "values": "Full Day,Half Day,Absent,Leave,Present",
+      "required": true
+    },
+    "hoursWorked_c": {
+      "type": "Decimal",
+      "label": "Hours worked",
+      "precision": 2
+    },
+    "overtimeHours_c": {
+      "type": "Decimal",
+      "label": "Overtime hours",
+      "precision": 2
+    },
+    "notes_c": {
+      "type": "MultilineText",
+      "label": "Notes"
+    },
+    "attendanceUnits_c": {
+      "type": "Decimal",
+      "label": "Attendance units",
+      "precision": 2
+    },
+    "dailyRateSnapshot_c": {
+      "type": "Decimal",
+      "label": "Daily rate snapshot (₹)",
+      "precision": 2
+    },
+    "earnedWage_c": {
+      "type": "Decimal",
+      "label": "Earned wage (₹)",
+      "precision": 2
+    }
+  },
+  "records": [
+    {
+      "Id": "d0000021-1a2b-4c3d-8e9f-900000000021",
+      "Name": "Aman Verma · 2026-10-15",
+      "worker_c": {
+        "Id": "d0000041-1a2b-4c3d-8e9f-900000000041",
+        "Name": "Aman Verma"
+      },
+      "attendanceDate_c": "2026-10-15",
+      "status_c": "Present",
+      "hoursWorked_c": 8,
+      "overtimeHours_c": 1,
+      "notes_c": "",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-14T09:15:00.000Z",
+      "ModifiedOn": "2026-10-14T09:15:00.000Z",
+      "dailyRateSnapshot_c": 850,
+      "attendanceUnits_c": 1,
+      "earnedWage_c": 850
+    },
+    {
+      "Id": "d0000022-1a2b-4c3d-8e9f-900000000022",
+      "Name": "Nikhil Rao · 2026-10-15",
+      "worker_c": {
+        "Id": "d0000042-1a2b-4c3d-8e9f-900000000042",
+        "Name": "Nikhil Rao"
+      },
+      "attendanceDate_c": "2026-10-15",
+      "status_c": "Present",
+      "hoursWorked_c": 8,
+      "overtimeHours_c": 0,
+      "notes_c": "",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-13T09:15:00.000Z",
+      "ModifiedOn": "2026-10-13T09:15:00.000Z",
+      "dailyRateSnapshot_c": 900,
+      "attendanceUnits_c": 1,
+      "earnedWage_c": 900
+    },
+    {
+      "Id": "d0000023-1a2b-4c3d-8e9f-900000000023",
+      "Name": "Suresh Kumar · 2026-10-15",
+      "worker_c": {
+        "Id": "d0000043-1a2b-4c3d-8e9f-900000000043",
+        "Name": "Suresh Kumar"
+      },
+      "attendanceDate_c": "2026-10-15",
+      "status_c": "Present",
+      "hoursWorked_c": 8,
+      "overtimeHours_c": 1.5,
+      "notes_c": "Shift lead",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-12T09:15:00.000Z",
+      "ModifiedOn": "2026-10-12T09:15:00.000Z",
+      "dailyRateSnapshot_c": 1200,
+      "attendanceUnits_c": 1,
+      "earnedWage_c": 1200
+    },
+    {
+      "Id": "d0000024-1a2b-4c3d-8e9f-900000000024",
+      "Name": "Imran Shaikh · 2026-10-15",
+      "worker_c": {
+        "Id": "d0000044-1a2b-4c3d-8e9f-900000000044",
+        "Name": "Imran Shaikh"
+      },
+      "attendanceDate_c": "2026-10-15",
+      "status_c": "Half Day",
+      "hoursWorked_c": 4,
+      "overtimeHours_c": 0,
+      "notes_c": "Left early",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-11T09:15:00.000Z",
+      "ModifiedOn": "2026-10-11T09:15:00.000Z",
+      "dailyRateSnapshot_c": 800,
+      "attendanceUnits_c": 0.5,
+      "earnedWage_c": 400
+    },
+    {
+      "Id": "d0000025-1a2b-4c3d-8e9f-900000000025",
+      "Name": "Ravi Teja · 2026-10-15",
+      "worker_c": {
+        "Id": "d0000045-1a2b-4c3d-8e9f-900000000045",
+        "Name": "Ravi Teja"
+      },
+      "attendanceDate_c": "2026-10-15",
+      "status_c": "Present",
+      "hoursWorked_c": 8,
+      "overtimeHours_c": 0,
+      "notes_c": "",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-10T09:15:00.000Z",
+      "ModifiedOn": "2026-10-10T09:15:00.000Z",
+      "dailyRateSnapshot_c": 1000,
+      "attendanceUnits_c": 1,
+      "earnedWage_c": 1000
+    },
+    {
+      "Id": "d0000026-1a2b-4c3d-8e9f-900000000026",
+      "Name": "Kiran Das · 2026-10-15",
+      "worker_c": {
+        "Id": "d0000046-1a2b-4c3d-8e9f-900000000046",
+        "Name": "Kiran Das"
+      },
+      "attendanceDate_c": "2026-10-15",
+      "status_c": "Absent",
+      "hoursWorked_c": 0,
+      "overtimeHours_c": 0,
+      "notes_c": "Called in sick",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-09T09:15:00.000Z",
+      "ModifiedOn": "2026-10-09T09:15:00.000Z",
+      "dailyRateSnapshot_c": 750,
+      "attendanceUnits_c": 0,
+      "earnedWage_c": 0
+    },
+    {
+      "Id": "d0000027-1a2b-4c3d-8e9f-900000000027",
+      "Name": "Mohan Yadav · 2026-10-15",
+      "worker_c": {
+        "Id": "d0000047-1a2b-4c3d-8e9f-900000000047",
+        "Name": "Mohan Yadav"
+      },
+      "attendanceDate_c": "2026-10-15",
+      "status_c": "Present",
+      "hoursWorked_c": 8,
+      "overtimeHours_c": 0,
+      "notes_c": "",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-08T09:15:00.000Z",
+      "ModifiedOn": "2026-10-08T09:15:00.000Z",
+      "dailyRateSnapshot_c": 950,
+      "attendanceUnits_c": 1,
+      "earnedWage_c": 950
+    },
+    {
+      "Id": "d0000028-1a2b-4c3d-8e9f-900000000028",
+      "Name": "Aman Verma · 2026-10-14",
+      "worker_c": {
+        "Id": "d0000041-1a2b-4c3d-8e9f-900000000041",
+        "Name": "Aman Verma"
+      },
+      "attendanceDate_c": "2026-10-14",
+      "status_c": "Present",
+      "hoursWorked_c": 8,
+      "overtimeHours_c": 0,
+      "notes_c": "",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-07T09:15:00.000Z",
+      "ModifiedOn": "2026-10-07T09:15:00.000Z",
+      "dailyRateSnapshot_c": 850,
+      "attendanceUnits_c": 1,
+      "earnedWage_c": 850
+    },
+    {
+      "Id": "d0000029-1a2b-4c3d-8e9f-900000000029",
+      "Name": "Nikhil Rao · 2026-10-14",
+      "worker_c": {
+        "Id": "d0000042-1a2b-4c3d-8e9f-900000000042",
+        "Name": "Nikhil Rao"
+      },
+      "attendanceDate_c": "2026-10-14",
+      "status_c": "Present",
+      "hoursWorked_c": 8,
+      "overtimeHours_c": 1,
+      "notes_c": "",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-06T09:15:00.000Z",
+      "ModifiedOn": "2026-10-06T09:15:00.000Z",
+      "dailyRateSnapshot_c": 900,
+      "attendanceUnits_c": 1,
+      "earnedWage_c": 900
+    },
+    {
+      "Id": "d0000030-1a2b-4c3d-8e9f-900000000030",
+      "Name": "Suresh Kumar · 2026-10-14",
+      "worker_c": {
+        "Id": "d0000043-1a2b-4c3d-8e9f-900000000043",
+        "Name": "Suresh Kumar"
+      },
+      "attendanceDate_c": "2026-10-14",
+      "status_c": "Present",
+      "hoursWorked_c": 8,
+      "overtimeHours_c": 0,
+      "notes_c": "",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-05T09:15:00.000Z",
+      "ModifiedOn": "2026-10-05T09:15:00.000Z",
+      "dailyRateSnapshot_c": 1200,
+      "attendanceUnits_c": 1,
+      "earnedWage_c": 1200
+    }
+  ]
+}

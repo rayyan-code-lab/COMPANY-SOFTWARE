@@ -1,0 +1,253 @@
+{
+  "_meta": {
+    "_table": {
+      "label": "Worker",
+      "plural": "Workers",
+      "icon": "Users"
+    },
+    "Name": {
+      "type": "Text",
+      "label": "Record name",
+      "required": true
+    },
+    "role_c": {
+      "type": "Picklist",
+      "label": "Role",
+      "values": "Operator,Machine Operator,Supervisor,Loader,Driver,Helper,Storekeeper,Other",
+      "required": true
+    },
+    "phone_c": {
+      "type": "Text",
+      "label": "Phone"
+    },
+    "dailyRate_c": {
+      "type": "Decimal",
+      "label": "Daily rate (₹)",
+      "precision": 2,
+      "required": true
+    },
+    "workerType_c": {
+      "type": "Picklist",
+      "label": "Worker type",
+      "values": "Regular,Temporary",
+      "required": true
+    },
+    "status_c": {
+      "type": "Picklist",
+      "label": "Status",
+      "values": "Active,Inactive",
+      "required": true
+    },
+    "joinedOn_c": {
+      "type": "Date",
+      "label": "Joining date",
+      "required": true
+    },
+    "notes_c": {
+      "type": "MultilineText",
+      "label": "Notes"
+    }
+  },
+  "records": [
+    {
+      "Id": "d0000041-1a2b-4c3d-8e9f-900000000041",
+      "Name": "Aman Verma",
+      "role_c": "Operator",
+      "phone_c": "+91 9000010001",
+      "dailyRate_c": 850,
+      "workerType_c": "Regular",
+      "status_c": "Active",
+      "joinedOn_c": "2025-03-12",
+      "notes_c": "",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-13T09:15:00.000Z",
+      "ModifiedOn": "2026-10-13T09:15:00.000Z"
+    },
+    {
+      "Id": "d0000042-1a2b-4c3d-8e9f-900000000042",
+      "Name": "Nikhil Rao",
+      "role_c": "Machine Operator",
+      "phone_c": "+91 9000010002",
+      "dailyRate_c": 900,
+      "workerType_c": "Regular",
+      "status_c": "Active",
+      "joinedOn_c": "2025-05-01",
+      "notes_c": "",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-12T09:15:00.000Z",
+      "ModifiedOn": "2026-10-12T09:15:00.000Z"
+    },
+    {
+      "Id": "d0000043-1a2b-4c3d-8e9f-900000000043",
+      "Name": "Suresh Kumar",
+      "role_c": "Supervisor",
+      "phone_c": "+91 9000010003",
+      "dailyRate_c": 1200,
+      "workerType_c": "Regular",
+      "status_c": "Active",
+      "joinedOn_c": "2024-11-08",
+      "notes_c": "Shift lead and stock verification.",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-11T09:15:00.000Z",
+      "ModifiedOn": "2026-10-11T09:15:00.000Z"
+    },
+    {
+      "Id": "d0000044-1a2b-4c3d-8e9f-900000000044",
+      "Name": "Imran Shaikh",
+      "role_c": "Loader",
+      "phone_c": "+91 9000010004",
+      "dailyRate_c": 800,
+      "workerType_c": "Regular",
+      "status_c": "Active",
+      "joinedOn_c": "2025-01-20",
+      "notes_c": "",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-10T09:15:00.000Z",
+      "ModifiedOn": "2026-10-10T09:15:00.000Z"
+    },
+    {
+      "Id": "d0000045-1a2b-4c3d-8e9f-900000000045",
+      "Name": "Ravi Teja",
+      "role_c": "Driver",
+      "phone_c": "+91 9000010005",
+      "dailyRate_c": 1000,
+      "workerType_c": "Regular",
+      "status_c": "Active",
+      "joinedOn_c": "2025-08-16",
+      "notes_c": "",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-09T09:15:00.000Z",
+      "ModifiedOn": "2026-10-09T09:15:00.000Z"
+    },
+    {
+      "Id": "d0000046-1a2b-4c3d-8e9f-900000000046",
+      "Name": "Kiran Das",
+      "role_c": "Helper",
+      "phone_c": "+91 9000010006",
+      "dailyRate_c": 750,
+      "workerType_c": "Regular",
+      "status_c": "Active",
+      "joinedOn_c": "2025-09-03",
+      "notes_c": "",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-08T09:15:00.000Z",
+      "ModifiedOn": "2026-10-08T09:15:00.000Z"
+    },
+    {
+      "Id": "d0000047-1a2b-4c3d-8e9f-900000000047",
+      "Name": "Mohan Yadav",
+      "role_c": "Storekeeper",
+      "phone_c": "+91 9000010007",
+      "dailyRate_c": 950,
+      "workerType_c": "Regular",
+      "status_c": "Active",
+      "joinedOn_c": "2024-07-22",
+      "notes_c": "",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-07T09:15:00.000Z",
+      "ModifiedOn": "2026-10-07T09:15:00.000Z"
+    },
+    {
+      "Id": "d0000048-1a2b-4c3d-8e9f-900000000048",
+      "Name": "Vijay Singh",
+      "role_c": "Helper",
+      "phone_c": "+91 9000010008",
+      "dailyRate_c": 780,
+      "workerType_c": "Regular",
+      "status_c": "Inactive",
+      "joinedOn_c": "2023-12-10",
+      "notes_c": "",
+      "Owner": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "ModifiedBy": {
+        "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90",
+        "Name": "Foundry Admin"
+      },
+      "CreatedOn": "2026-10-06T09:15:00.000Z",
+      "ModifiedOn": "2026-10-06T09:15:00.000Z"
+    }
+  ]
+}

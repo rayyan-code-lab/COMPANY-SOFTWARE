@@ -1,0 +1,217 @@
+{
+  "_meta": {
+    "_table": {
+      "label": "Worker payment",
+      "plural": "Worker payments",
+      "icon": "IndianRupee"
+    },
+    "Name": {
+      "type": "Text",
+      "label": "Payment reference",
+      "required": true
+    },
+    "worker_c": {
+      "type": "Lookup",
+      "label": "Worker",
+      "lookup": "workers_c",
+      "required": true
+    },
+    "paymentType_c": {
+      "type": "Picklist",
+      "label": "Payment type",
+      "values": "Wage Payment,Advance",
+      "required": true
+    },
+    "amount_c": {
+      "type": "Decimal",
+      "label": "Amount (₹)",
+      "precision": 2,
+      "required": true
+    },
+    "paymentDate_c": {
+      "type": "Date",
+      "label": "Payment date",
+      "required": true
+    },
+    "paymentMethod_c": {
+      "type": "Picklist",
+      "label": "Payment method",
+      "values": "Cash,UPI,Bank Transfer,Other",
+      "required": true
+    },
+    "periodStart_c": {
+      "type": "Date",
+      "label": "Period start"
+    },
+    "periodEnd_c": {
+      "type": "Date",
+      "label": "Period end"
+    },
+    "notes_c": {
+      "type": "MultilineText",
+      "label": "Notes"
+    }
+  },
+  "records": [
+    {
+      "Id": "d0000091-1a2b-4c3d-8e9f-900000000091",
+      "Name": "PAY-20261010-001 · Aman Verma",
+      "worker_c": {
+        "Id": "d0000041-1a2b-4c3d-8e9f-900000000041",
+        "Name": "Aman Verma"
+      },
+      "paymentType_c": "Advance",
+      "amount_c": 1000,
+      "paymentDate_c": "2026-10-10",
+      "paymentMethod_c": "Cash",
+      "periodStart_c": "2026-10-01",
+      "periodEnd_c": "2026-10-15",
+      "notes_c": "Mid-month advance against wages",
+      "Owner": { "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90", "Name": "Foundry Admin" },
+      "CreatedBy": { "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90", "Name": "Foundry Admin" },
+      "ModifiedBy": { "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90", "Name": "Foundry Admin" },
+      "CreatedOn": "2026-10-10T09:15:00.000Z",
+      "ModifiedOn": "2026-10-10T09:15:00.000Z"
+    },
+    {
+      "Id": "d0000092-1a2b-4c3d-8e9f-900000000092",
+      "Name": "PAY-20261015-001 · Aman Verma",
+      "worker_c": {
+        "Id": "d0000041-1a2b-4c3d-8e9f-900000000041",
+        "Name": "Aman Verma"
+      },
+      "paymentType_c": "Wage Payment",
+      "amount_c": 10500,
+      "paymentDate_c": "2026-10-15",
+      "paymentMethod_c": "Bank Transfer",
+      "periodStart_c": "2026-10-01",
+      "periodEnd_c": "2026-10-15",
+      "notes_c": "Fortnightly wage settlement",
+      "Owner": { "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90", "Name": "Foundry Admin" },
+      "CreatedBy": { "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90", "Name": "Foundry Admin" },
+      "ModifiedBy": { "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90", "Name": "Foundry Admin" },
+      "CreatedOn": "2026-10-15T09:15:00.000Z",
+      "ModifiedOn": "2026-10-15T09:15:00.000Z"
+    },
+    {
+      "Id": "d0000093-1a2b-4c3d-8e9f-900000000093",
+      "Name": "PAY-20261008-001 · Suresh Kumar",
+      "worker_c": {
+        "Id": "d0000043-1a2b-4c3d-8e9f-900000000043",
+        "Name": "Suresh Kumar"
+      },
+      "paymentType_c": "Advance",
+      "amount_c": 1500,
+      "paymentDate_c": "2026-10-08",
+      "paymentMethod_c": "Cash",
+      "periodStart_c": "2026-10-01",
+      "periodEnd_c": "2026-10-15",
+      "notes_c": "Festival advance",
+      "Owner": { "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90", "Name": "Foundry Admin" },
+      "CreatedBy": { "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90", "Name": "Foundry Admin" },
+      "ModifiedBy": { "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90", "Name": "Foundry Admin" },
+      "CreatedOn": "2026-10-08T09:15:00.000Z",
+      "ModifiedOn": "2026-10-08T09:15:00.000Z"
+    },
+    {
+      "Id": "d0000094-1a2b-4c3d-8e9f-900000000094",
+      "Name": "PAY-20261005-001 · Ravi Teja",
+      "worker_c": {
+        "Id": "d0000045-1a2b-4c3d-8e9f-900000000045",
+        "Name": "Ravi Teja"
+      },
+      "paymentType_c": "Advance",
+      "amount_c": 2000,
+      "paymentDate_c": "2026-10-05",
+      "paymentMethod_c": "UPI",
+      "periodStart_c": "2026-10-01",
+      "periodEnd_c": "2026-10-15",
+      "notes_c": "Vehicle maintenance advance",
+      "Owner": { "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90", "Name": "Foundry Admin" },
+      "CreatedBy": { "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90", "Name": "Foundry Admin" },
+      "ModifiedBy": { "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90", "Name": "Foundry Admin" },
+      "CreatedOn": "2026-10-05T09:15:00.000Z",
+      "ModifiedOn": "2026-10-05T09:15:00.000Z"
+    },
+    {
+      "Id": "d0000095-1a2b-4c3d-8e9f-900000000095",
+      "Name": "PAY-20261014-001 · Ravi Teja",
+      "worker_c": {
+        "Id": "d0000045-1a2b-4c3d-8e9f-900000000045",
+        "Name": "Ravi Teja"
+      },
+      "paymentType_c": "Wage Payment",
+      "amount_c": 12000,
+      "paymentDate_c": "2026-10-14",
+      "paymentMethod_c": "UPI",
+      "periodStart_c": "2026-10-01",
+      "periodEnd_c": "2026-10-15",
+      "notes_c": "Fortnightly wage payout",
+      "Owner": { "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90", "Name": "Foundry Admin" },
+      "CreatedBy": { "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90", "Name": "Foundry Admin" },
+      "ModifiedBy": { "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90", "Name": "Foundry Admin" },
+      "CreatedOn": "2026-10-14T09:15:00.000Z",
+      "ModifiedOn": "2026-10-14T09:15:00.000Z"
+    },
+    {
+      "Id": "d0000096-1a2b-4c3d-8e9f-900000000096",
+      "Name": "PAY-20261010-002 · Kiran Das",
+      "worker_c": {
+        "Id": "d0000046-1a2b-4c3d-8e9f-900000000046",
+        "Name": "Kiran Das"
+      },
+      "paymentType_c": "Advance",
+      "amount_c": 500,
+      "paymentDate_c": "2026-10-10",
+      "paymentMethod_c": "Cash",
+      "periodStart_c": "2026-10-01",
+      "periodEnd_c": "2026-10-15",
+      "notes_c": "Medical advance",
+      "Owner": { "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90", "Name": "Foundry Admin" },
+      "CreatedBy": { "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90", "Name": "Foundry Admin" },
+      "ModifiedBy": { "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90", "Name": "Foundry Admin" },
+      "CreatedOn": "2026-10-10T09:15:00.000Z",
+      "ModifiedOn": "2026-10-10T09:15:00.000Z"
+    },
+    {
+      "Id": "d0000097-1a2b-4c3d-8e9f-900000000097",
+      "Name": "PAY-20261015-002 · Mohan Yadav",
+      "worker_c": {
+        "Id": "d0000047-1a2b-4c3d-8e9f-900000000047",
+        "Name": "Mohan Yadav"
+      },
+      "paymentType_c": "Wage Payment",
+      "amount_c": 13000,
+      "paymentDate_c": "2026-10-15",
+      "paymentMethod_c": "Bank Transfer",
+      "periodStart_c": "2026-10-01",
+      "periodEnd_c": "2026-10-15",
+      "notes_c": "Wage settlement",
+      "Owner": { "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90", "Name": "Foundry Admin" },
+      "CreatedBy": { "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90", "Name": "Foundry Admin" },
+      "ModifiedBy": { "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90", "Name": "Foundry Admin" },
+      "CreatedOn": "2026-10-15T09:15:00.000Z",
+      "ModifiedOn": "2026-10-15T09:15:00.000Z"
+    },
+    {
+      "Id": "d0000098-1a2b-4c3d-8e9f-900000000098",
+      "Name": "PAY-20261001-001 · Vijay Singh",
+      "worker_c": {
+        "Id": "d0000048-1a2b-4c3d-8e9f-900000000048",
+        "Name": "Vijay Singh"
+      },
+      "paymentType_c": "Wage Payment",
+      "amount_c": 7800,
+      "paymentDate_c": "2026-10-01",
+      "paymentMethod_c": "Cash",
+      "periodStart_c": "2026-09-16",
+      "periodEnd_c": "2026-09-30",
+      "notes_c": "Previous cycle clearance",
+      "Owner": { "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90", "Name": "Foundry Admin" },
+      "CreatedBy": { "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90", "Name": "Foundry Admin" },
+      "ModifiedBy": { "Id": "a41c9d27-5e8f-4b06-9c3a-d7f218e64b90", "Name": "Foundry Admin" },
+      "CreatedOn": "2026-10-01T09:15:00.000Z",
+      "ModifiedOn": "2026-10-01T09:15:00.000Z"
+    }
+  ]
+}
